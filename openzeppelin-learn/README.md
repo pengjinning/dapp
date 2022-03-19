@@ -8,4 +8,7 @@ npx truffle init
 # Try our scaffold commands to get started:
 $ truffle create contract YourContractName # scaffold a contract
 $ truffle create test YourTestName         # scaffold a test
+# 
+yarn add hardhat
+npx hardhat
 ```
