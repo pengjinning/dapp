@@ -29,4 +29,6 @@ sudo npm install -g truffle
 sudo npm install -g ganache
 # 下载安装ganache
 https://trufflesuite.com/ganache/
+# 创建新ethereum账号，每执行一次创建一个新账号
+npx mnemonics
 ```
