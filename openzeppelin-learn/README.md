@@ -22,4 +22,9 @@ npx hardhat run --network localhost scripts/deploy.js
 npx hardhat console --network localhost
 # 运行
 npx hardhat run --network localhost ./scripts/index.js
+# 单元测试
+npx hardhat test
+# 其他全局依赖
+sudo npm install -g truffle
+sudo npm install -g ganache
 ```
