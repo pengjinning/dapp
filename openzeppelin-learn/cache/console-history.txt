@@ -1,3 +1,5 @@
+(await ethers.provider.getBalance(accounts[0])).toString()
+accounts = await ethers.provider.listAccounts()
 (await box.retrieve()).toString()
 await box.retrieve()
 await box.store(42)

@@ -7,9 +7,9 @@ const { alchemyApiKey, mnemonic } = require('./secrets.json');
 module.exports = {
   solidity: "0.8.12",
   networks: {
-  rinkeby: {
-        url: `https://eth-rinkeby.alchemyapi.io/v2/${alchemyApiKey}`,
-          accounts: { mnemonic: mnemonic },
-      },
+    rinkeby: {
+      url: `https://eth-rinkeby.alchemyapi.io/v2/${alchemyApiKey}`,
+      accounts: { mnemonic: mnemonic },
+    },
   },
 };

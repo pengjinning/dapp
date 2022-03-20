@@ -31,4 +31,7 @@ sudo npm install -g ganache
 https://trufflesuite.com/ganache/
 # 创建新ethereum账号，每执行一次创建一个新账号
 npx mnemonics
+# 测试
+# https://docs.openzeppelin.com/learn/connecting-to-public-test-networks
+npx hardhat console --network rinkeby
 ```
