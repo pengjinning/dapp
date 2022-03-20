@@ -27,4 +27,6 @@ npx hardhat test
 # 其他全局依赖
 sudo npm install -g truffle
 sudo npm install -g ganache
+# 下载安装ganache
+https://trufflesuite.com/ganache/
 ```
