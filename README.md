@@ -1,3 +1,0 @@
-# dapp
-
-dapp playground
