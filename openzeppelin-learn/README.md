@@ -11,4 +11,15 @@ $ truffle create test YourTestName         # scaffold a test
 # 
 yarn add hardhat
 npx hardhat
+# 编译
+npx hardhat compile
+# 打开一个新terminal, 运行本地hardhat区块链
+npx hardhat node
+# 部署
+npx hardhat run --network localhost scripts/deploy.js
+# Box deployed to: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+# 命令行交互
+npx hardhat console --network localhost
+# 运行
+npx hardhat run --network localhost ./scripts/index.js
 ```
