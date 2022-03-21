@@ -1,3 +1,10 @@
+(await box.retrieve()).toString();
+await box.increment();
+const box = await BoxV2.attach('0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0')
+const BoxV2 = await ethers.getContractFactory('BoxV2');
+(await box.retrieve()).toString();
+const box = await Box.attach('0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0')
+const Box = await ethers.getContractFactory('Box');
 (await ethers.provider.getBalance(accounts[0])).toString()
 accounts = await ethers.provider.listAccounts()
 (await box.retrieve()).toString()

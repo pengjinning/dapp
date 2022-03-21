@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/ningjinpeng/Desktop/git/github/dapps/learn/openzeppelin-learn/contracts/Box.sol": {
-      "lastModificationDate": 1647762920865,
-      "contentHash": "1908c90dcbef5a0d5f749ca9e2d48b49",
+      "lastModificationDate": 1647823991081,
+      "contentHash": "ea8a2b5d0fbc586e0cc602efb5b0b724",
       "sourceName": "contracts/Box.sol",
       "solcConfig": {
         "version": "0.8.12",
@@ -19,7 +19,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ],
               "": [
                 "ast"
@@ -28,9 +29,7 @@
           }
         }
       },
-      "imports": [
-        "@openzeppelin/contracts/access/Ownable.sol"
-      ],
+      "imports": [],
       "versionPragmas": [
         "^0.8.12"
       ],
@@ -56,7 +55,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ],
               "": [
                 "ast"
@@ -91,7 +91,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ],
               "": [
                 "ast"
@@ -126,7 +127,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ],
               "": [
                 "ast"
@@ -163,7 +165,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ],
               "": [
                 "ast"
@@ -178,6 +181,42 @@
       ],
       "artifacts": [
         "Context"
+      ]
+    },
+    "/Users/ningjinpeng/Desktop/git/github/dapps/learn/openzeppelin-learn/contracts/BoxV2.sol": {
+      "lastModificationDate": 1647824127224,
+      "contentHash": "44726bced363476c75617f3aa85b80a1",
+      "sourceName": "contracts/BoxV2.sol",
+      "solcConfig": {
+        "version": "0.8.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.12"
+      ],
+      "artifacts": [
+        "BoxV2"
       ]
     }
   }
