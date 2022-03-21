@@ -9,6 +9,11 @@
       "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
       "txHash": "0xa8ef21159f5d56bf6b71f48b13d763bab88e23db9ebd56c5694a316567bbf90c",
       "kind": "transparent"
+    },
+    {
+      "address": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
+      "txHash": "0xea4d847a4165da754e5308b1c4b9b9e81d1dbb3e4b8786f351ada1065d151ae6",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -49,6 +54,60 @@
           }
         ],
         "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "d4b5634fb4d89e3f10b5de84ca510ff0279cd11756a223e06b8aebdbf1675480": {
+      "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      "txHash": "0x4e812b158597e288262d558f2cdd575a7bc3374951a8852c5dc5cbeb3b6b8364",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "label": "_value",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "AdminBox",
+            "src": "contracts/AdminBox.sol:8"
+          },
+          {
+            "label": "_admin",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "AdminBox",
+            "src": "contracts/AdminBox.sol:9"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
           "t_uint256": {
             "label": "uint256",
             "numberOfBytes": "32"

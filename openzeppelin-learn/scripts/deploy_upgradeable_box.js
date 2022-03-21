@@ -1,4 +1,5 @@
 // https://docs.openzeppelin.com/learn/upgrading-smart-contracts
+// npx hardhat run --network localhost scripts/deploy_upgradeable_box.js
 // scripts/deploy_upgradeable_box.js
 const { ethers, upgrades } = require('hardhat');
 
