@@ -19,5 +19,6 @@ func (k Keeper) Posts(goCtx context.Context,  req *types.QueryPostsRequest) (*ty
     // TODO: Process the query
     _ = ctx
 
-	return &types.QueryPostsResponse{}, nil
+	// return &types.QueryPostsResponse{}, nil
+	return &types.QueryPostsResponse{Title: "Hello!", Body: "Starport"}, nil
 }
