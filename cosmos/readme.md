@@ -10,3 +10,4 @@
 - starport scaffold chain github.com/cosmonaut/hello
 - starport scaffold --help
 - starport chain serve
+- starport scaffold query posts --response title,body

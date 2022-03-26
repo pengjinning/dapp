@@ -22,6 +22,11 @@ export interface HelloQueryParamsResponse {
   params?: HelloParams;
 }
 
+export interface HelloQueryPostsResponse {
+  title?: string;
+  body?: string;
+}
+
 export interface ProtobufAny {
   "@type"?: string;
 }
@@ -240,6 +245,22 @@ export class Api<SecurityDataType extends unknown> extends HttpClient<SecurityDa
   queryParams = (params: RequestParams = {}) =>
     this.request<HelloQueryParamsResponse, RpcStatus>({
       path: `/cosmonaut/hello/hello/params`,
+      method: "GET",
+      format: "json",
+      ...params,
+    });
+
+  /**
+   * No description
+   *
+   * @tags Query
+   * @name QueryPosts
+   * @summary Queries a list of Posts items.
+   * @request GET:/cosmonaut/hello/hello/posts
+   */
+  queryPosts = (params: RequestParams = {}) =>
+    this.request<HelloQueryPostsResponse, RpcStatus>({
+      path: `/cosmonaut/hello/hello/posts`,
       method: "GET",
       format: "json",
       ...params,
