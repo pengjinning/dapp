@@ -33,3 +33,8 @@
 - go work init ./hello
 <!-- 添加module模块到workspace -->
 - go work use ./example
+<!-- go work use [-r] [dir] adds a use directive to the go.work file for dir, if it exists, and removes the use directory if the argument directory doesn’t exist. The -r flag examines subdirectories of dir recursively. -->
+<!-- go work edit edits the go.work file similarly to go mod edit -->
+<!-- go work sync syncs dependencies from the workspace’s build list into each of the workspace modules. -->
+<!-- 加载当前文件夹所有依赖 -->
+- go get .
