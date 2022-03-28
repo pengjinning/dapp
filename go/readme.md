@@ -27,3 +27,9 @@
 - go install
 <!-- 添加 export PATH=$PATH:/Users/ningjinpeng/go/bin/ 到 .bash_profile/.zshrc -->
 <!-- 然后就重新打开个terminal可以直接执行 hello -->
+<!-- 下载第三方包 -->
+- go get golang.org/x/example
+<!-- 初始化workspace -->
+- go work init ./hello
+<!-- 添加module模块到workspace -->
+- go work use ./example
