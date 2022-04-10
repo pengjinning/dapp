@@ -26,3 +26,4 @@ node_modules/
 secrets.json
 solana/dapp-scaffold/
 Dapp-Learning/
+openzeppelin-ethernaut/ethernaut/
