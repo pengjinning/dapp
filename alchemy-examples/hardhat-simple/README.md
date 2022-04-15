@@ -1,5 +1,8 @@
 # Basic Sample Hardhat Project
 
+- [教程](https://docs.alchemy.com/alchemy/tutorials/deploy-your-own-erc20-token)
+- [合约](https://ropsten.etherscan.io/address/0x472cdd2ff31b7FF3411cAae1351E836aB5C6E1e7)
+
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
 
 Try running some of the following tasks:
