@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable camelcase */
 /* eslint-disable no-undef */
 /* eslint-disable no-underscore-dangle */
 require("dotenv").config();

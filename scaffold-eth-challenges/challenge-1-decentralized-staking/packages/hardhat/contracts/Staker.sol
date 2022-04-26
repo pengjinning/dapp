@@ -18,7 +18,7 @@ contract Staker {
 
   // After some `deadline` allow anyone to call an `execute()` function
   //  It should either call `exampleExternalContract.complete{value: address(this).balance}()` to send all the value
-  uint256 public deadline = block.timestamp + 30 seconds;
+  uint256 public deadline = block.timestamp + 120 seconds;
 
   // if the `threshold` was not met, allow everyone to call a `withdraw()` function
   uint256 public constant threshold = 1 ether;
@@ -54,7 +54,7 @@ contract Staker {
   }
 
   // 
-  function stake() public payable {
+  function stake() public payable deadlineReached(false) stakeNotCompleted {
     // 
     balances[msg.sender] += msg.value;
     // 
@@ -83,6 +83,6 @@ contract Staker {
   }
 
   // Add the `receive()` special function that receives eth and calls stake()
-  // function receive() public payable {}
+  receive() external payable {}
 
 }
