@@ -54,7 +54,7 @@ const { ethers } = require("ethers");
 const targetNetwork = NETWORKS.rinkeby;
 
 // 😬 Sorry for all the console logging
-const DEBUG = true;
+const DEBUG = false;
 const NETWORKCHECK = true;
 
 // 🛰 providers
