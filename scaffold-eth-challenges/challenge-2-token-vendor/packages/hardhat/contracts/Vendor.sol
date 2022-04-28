@@ -15,18 +15,23 @@ contract Vendor is Ownable {
   }
 
   // ToDo: create a payable buyTokens() function:
+  uint256 public constant tokensPerEth = 100;
+
   function buyTokens() public payable {
-    
+
+    uint256 amountOfTokens = msg.value * tokensPerEth;
+    //
+    yourToken.transfer(msg.sender, amountOfTokens);
+    //
+    emit BuyTokens(msg.sender, msg.value, amountOfTokens);
   }
 
   // ToDo: create a withdraw() function that lets the owner withdraw ETH
-  function withdraw() public {
-
-  }
+  // function withdraw() public {
+  // }
 
   // ToDo: create a sellTokens() function:
-  function sellTokens() public {
-
-  }
+  // function sellTokens() public {
+  // }
   
 }

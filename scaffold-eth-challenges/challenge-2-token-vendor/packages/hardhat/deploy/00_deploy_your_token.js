@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // deploy/00_deploy_your_contract.js
 
 const { ethers } = require("hardhat");
