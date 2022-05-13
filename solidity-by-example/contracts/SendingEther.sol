@@ -57,7 +57,7 @@ contract SendEther {
 
     function sendViaTransfer(address payable _to) public payable {
         // This function is no longer recommended for sending Ether.
-        _to.transfer(msg.value)
+        _to.transfer(msg.value);
     }
 
     function sendViaSend(address payable _to) public payable {
