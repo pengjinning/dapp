@@ -10,4 +10,7 @@
 truffle init
 # yarn add truffle-hdwallet-provider
 yarn add @truffle/hdwallet-provider
+# 编译
+truffle compile
+# 
 ```

@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.10;
+pragma solidity >=0.4.22 <0.9.0;
 
 import "./zombieownership.sol";
 
-contract CryptoZombies is ZombieOwnership {
-
-}
+contract CryptoZombies is ZombieOwnership {}
