@@ -15,4 +15,6 @@ truffle compile
 # 
 truffle migrate --network rinkeby
 truffle migrate --network mainnet
+truffle migrate --network loom_testnet
+truffle migrate --network basechain
 ```
