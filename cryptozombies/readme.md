@@ -13,4 +13,6 @@ yarn add @truffle/hdwallet-provider
 # 编译
 truffle compile
 # 
+truffle migrate --network rinkeby
+truffle migrate --network mainnet
 ```
