@@ -18,6 +18,7 @@ contract Staker {
   uint256 public deadline = block.timestamp + 60 * 5 seconds;
   // if the `threshold` was not met, allow everyone to call a `withdraw()` function
   uint256 public constant threshold = 1 ether;
+  // bool public openForWithdraw = false;
   event Stake(address indexed sender, uint256 amount);
   // 
   modifier deadlineReached(bool requireReached) {
