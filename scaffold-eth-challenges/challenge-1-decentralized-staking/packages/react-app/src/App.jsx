@@ -31,22 +31,21 @@ import humanizeDuration from "humanize-duration";
 
 const { ethers } = require("ethers");
 /*
-    Welcome to 🏗 scaffold-eth !
+  Welcome to 🏗 scaffold-eth !
 
-    Code:
-    https://github.com/austintgriffith/scaffold-eth
+  Code:
+  https://github.com/austintgriffith/scaffold-eth
 
-    Support:
-    https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA
-    or DM @austingriffith on twitter or telegram
+  Support:
+  https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA
+  or DM @austingriffith on twitter or telegram
 
-    You should get your own Infura.io ID and put it in `constants.js`
-    (this is your connection to the main Ethereum network for ENS etc.)
+  You should get your own Infura.io ID and put it in `constants.js`
+  (this is your connection to the main Ethereum network for ENS etc.)
 
-
-    🌏 EXTERNAL CONTRACTS:
-    You can also bring in contract artifacts in `constants.js`
-    (and then use the `useExternalContractLoader()` hook!)
+  🌏 EXTERNAL CONTRACTS:
+  You can also bring in contract artifacts in `constants.js`
+  (and then use the `useExternalContractLoader()` hook!)
 */
 
 /// 📡 What chain are your contracts deployed to?
@@ -436,6 +435,7 @@ function App(props) {
       console.log(code, reason);
       logoutOfWeb3Modal();
     });
+    //
   }, [setInjectedProvider]);
 
   useEffect(() => {
@@ -638,7 +638,7 @@ function App(props) {
 
       <div style={{ marginTop: 32, opacity: 0.5 }}>
         {/* Add your address here */}
-        Created by <Address value={"Your...address"} ensProvider={mainnetProvider} fontSize={16} />
+        Created by <Address value={"0x63a4EA814A3E832A51543bEb722FCf5F08E00E4f"} ensProvider={mainnetProvider} fontSize={16} />
       </div>
 
       <div style={{ marginTop: 32, opacity: 0.5 }}>

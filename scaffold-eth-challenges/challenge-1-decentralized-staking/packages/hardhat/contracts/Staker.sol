@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.10;
+pragma solidity ^0.8.4;
 
 import "hardhat/console.sol";
 import "./ExampleExternalContract.sol";
@@ -15,12 +15,10 @@ contract Staker {
   mapping ( address => uint256 ) public balances;
   // After some `deadline` allow anyone to call an `execute()` function
   //  It should either call `exampleExternalContract.complete{value: address(this).balance}()` to send all the value
-  uint256 public deadline = block.timestamp + 120 seconds;
+  uint256 public deadline = block.timestamp + 60 * 5 seconds;
   // if the `threshold` was not met, allow everyone to call a `withdraw()` function
   uint256 public constant threshold = 1 ether;
-  // 
   event Stake(address indexed sender, uint256 amount);
-
   // 
   modifier deadlineReached(bool requireReached) {
     uint256 timeRemaing = timeLeft();
@@ -31,15 +29,14 @@ contract Staker {
     }
     _;
   }
-
   // 
-  modifier stakeNotCompleted() {
+  modifier notCompleted() {
     bool completed = exampleExternalContract.completed();
     require(!completed, "staking already completed");
     _;
   }
 
-  function execute() public stakeNotCompleted deadlineReached(false) {
+  function execute() public notCompleted deadlineReached(false) {
     uint256 contractBalance = address(this).balance;
     require(contractBalance >= threshold, "threshold not reached");
     (bool sent,) = address(exampleExternalContract).call{value: contractBalance}(abi.encodeWithSignature("complete()"));
@@ -47,13 +44,13 @@ contract Staker {
   }
 
   // 
-  function stake() public payable deadlineReached(false) stakeNotCompleted {
+  function stake() public payable deadlineReached(false) notCompleted {
     balances[msg.sender] += msg.value;
     emit Stake(msg.sender, msg.value);
   }
 
   // Add a `withdraw()` function to let users withdraw their balance
-  function withdraw() public deadlineReached(true) stakeNotCompleted {
+  function withdraw() public deadlineReached(true) notCompleted {
     uint256 userBalance = balances[msg.sender];
     require(userBalance > 0, "you don't have enough balance to withdraw");
     balances[msg.sender] = 0;
@@ -71,6 +68,9 @@ contract Staker {
   }
 
   // Add the `receive()` special function that receives eth and calls stake()
-  receive() external payable {}
+  receive() external payable {
+    stake();
+  }
+  // fallback() external payable {}
 
 }
