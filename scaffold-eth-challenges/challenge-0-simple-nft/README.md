@@ -2,6 +2,10 @@
 
 发布地址：<https://incompetent-arch.surge.sh/>
 
+- export http_proxy=http://127.0.0.1:10818
+- export https_proxy=http://127.0.0.1:10818
+
+
 ## 🚩 Challenge 0: 🎟 Simple NFT Example 🤓
 
 🎫 Create a simple NFT to learn basics of 🏗 scaffold-eth. You'll use [👷‍♀️ HardHat](https://hardhat.org/getting-started/) to compile and deploy smart contracts. Then, you'll use a template React app full of important Ethereum components and hooks. Finally, you'll deploy an NFT to a public network to share with friends! 🚀

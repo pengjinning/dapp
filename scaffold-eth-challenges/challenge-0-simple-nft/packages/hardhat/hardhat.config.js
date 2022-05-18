@@ -19,13 +19,13 @@ require("@nomiclabs/hardhat-etherscan");
 const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 
 /*
-      📡 This is where you configure your deploy configuration for 🏗 scaffold-eth
-      From here look at deploy/00_deploy_your_contract.js
+  📡 This is where you configure your deploy configuration for 🏗 scaffold-eth
+  From here look at deploy/00_deploy_your_contract.js
 */
 
 // Select the network you want to deploy to here:
-const defaultNetwork = "rinkeby";
-// const defaultNetwork = "localhost";
+// const defaultNetwork = "rinkeby";
+const defaultNetwork = "localhost";
 
 const mainnetGwei = 115;
 
