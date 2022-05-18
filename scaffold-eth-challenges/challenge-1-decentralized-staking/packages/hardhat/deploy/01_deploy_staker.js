@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // deploy/01_deploy_staker.js
 
 // const { ethers } = require("hardhat");
