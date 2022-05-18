@@ -1,3 +1,13 @@
+/* eslint-disable no-throw-literal */
+/* eslint-disable guard-for-in */
+/* eslint-disable no-restricted-syntax */
+/* eslint-disable no-await-in-loop */
+/* eslint-disable no-shadow */
+/* eslint-disable global-require */
+/* eslint-disable no-use-before-define */
+/* eslint-disable prettier/prettier */
+/* eslint-disable new-cap */
+/* eslint-disable consistent-return */
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable camelcase */
 /* eslint-disable no-undef */
@@ -380,7 +390,7 @@ task(
     const hdkey = require("ethereumjs-wallet/hdkey");
 
     let mnemonic = "";
-    while (contract_address.indexOf(taskArgs.searchFor) != 0) {
+    while (contract_address.indexOf(taskArgs.searchFor) !== 0) {
       mnemonic = bip39.generateMnemonic();
       if (DEBUG) console.log("mnemonic", mnemonic);
       const seed = await bip39.mnemonicToSeed(mnemonic);
